@@ -6,11 +6,8 @@ MicroProfile Starter has generated this MicroProfile application for you.
 
 The generation of the executable jar file can be performed by issuing the following command
 
-    mvn clean package
+    mvn liberty:dev
 
-This will create an executable jar file **demo.jar** within the _target_ maven folder. This can be started by executing the following command
-
-    java -jar target/demo.jar
 
 To launch the test page, open your browser at the following URL
 
