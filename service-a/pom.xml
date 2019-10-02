@@ -53,30 +53,26 @@
               <execution>
                 <id>package-server</id>
                 <phase>package</phase>
-                <!--<goals>
+                <goals>
                 <goal>create</goal>
                 <goal>deploy</goal>
                 <goal>package</goal>
-                </goals>-->
+                </goals>
                 <configuration>
                   <outputDirectory>target/wlp-package</outputDirectory>
                 </configuration>
               </execution>
             </executions>
             <configuration>
-              <assemblyArtifact>
+              <runtimeArtifact>
                 <groupId>io.openliberty</groupId>
                 <artifactId>openliberty-runtime</artifactId>
                 <version>${openliberty.version}</version>
                 <type>zip</type>
-
-              </assemblyArtifact> 
+              </runtimeArtifact> 
               <appArchive>${project.build.directory}/${project.artifactId}.war</appArchive>
-              <packageFile>${project.build.directory}/${project.artifactId}.jar</packageFile>
               <include>runnable</include>
               <serverName>${project.artifactId}</serverName>
-              <installAppPackages>project</installAppPackages>
-              <configDirectory>${project.basedir}/src/main/liberty/config</configDirectory>
               <bootstrapProperties>
                 <project.name>${project.artifactId}</project.name>
                 <jwt.issuer>https://server.example.com</jwt.issuer>
