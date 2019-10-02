@@ -71,7 +71,7 @@
                 <type>zip</type>
               </runtimeArtifact> 
               <appArchive>${project.build.directory}/${project.artifactId}.war</appArchive>
-              <include>runnable</include>
+              <packageType>jar</packageType>
               <serverName>${project.artifactId}</serverName>
               <bootstrapProperties>
                 <project.name>${project.artifactId}</project.name>
