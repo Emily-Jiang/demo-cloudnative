@@ -8,9 +8,9 @@ The generation of the executable jar file can be performed by issuing the follow
 
     mvn clean package
 
-This will create an executable jar file **demo.jar** within the _target_ maven folder. This can be started by executing the following command
+This will create an executable jar file **demo-service-b.jar** within the _target_ maven folder. This can be started by executing the following command
 
-    java -jar target/demo.jar 
+    java -jar target/demo-service-b.jar
 
 
 ## Specification examples
