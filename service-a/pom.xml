@@ -36,6 +36,21 @@
       <plugin>
         <groupId>io.openliberty.tools</groupId>
         <artifactId>liberty-maven-plugin</artifactId>
+        <executions>
+          <execution>
+            <id>package-server</id>
+            <phase>package</phase>
+            <goals>
+              <goal>create</goal>
+              <goal>install-feature</goal>
+              <goal>deploy</goal>
+              <goal>package</goal>
+            </goals>
+          </execution>
+        </executions>
+        <configuration>
+          <packageType>jar</packageType>
+        </configuration>
       </plugin>
     </plugins>
   </build>
