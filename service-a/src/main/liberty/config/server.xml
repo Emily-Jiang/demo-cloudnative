@@ -5,6 +5,9 @@
         <feature>microProfile-3.0</feature>
     </featureManager>
 
+    <variable name="jwt.issuer" defaultValue="https://server.example.com"/>
+    <variable name="project.name" defaultValue="demo-service-a"/>
+
     <httpEndpoint id="defaultHttpEndpoint"
                   httpPort="8181"
                   httpsPort="8543"/>

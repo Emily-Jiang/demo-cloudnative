@@ -10,6 +10,9 @@
     <failOnMissingWebXml>false</failOnMissingWebXml>
     <maven.compiler.source>1.8</maven.compiler.source>
     <maven.compiler.target>1.8</maven.compiler.target>
+    <!-- Liberty configuration -->
+    <liberty.var.jwt.issuer>https://server.example.com</liberty.var.jwt.issuer>
+    <liberty.var.project.name>${project.artifactId}</liberty.var.project.name>
   </properties>
   <dependencies>
     <dependency>
@@ -36,18 +39,6 @@
       <plugin>
         <groupId>io.openliberty.tools</groupId>
         <artifactId>liberty-maven-plugin</artifactId>
-        <executions>
-          <execution>
-            <id>package-server</id>
-            <phase>package</phase>
-            <goals>
-              <goal>create</goal>
-              <goal>install-feature</goal>
-              <goal>deploy</goal>
-              <goal>package</goal>
-            </goals>
-          </execution>
-        </executions>
         <configuration>
           <packageType>jar</packageType>
         </configuration>
