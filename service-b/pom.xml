@@ -40,7 +40,7 @@
         <groupId>io.openliberty.tools</groupId>
         <artifactId>liberty-maven-plugin</artifactId>
         <configuration>
-          <packageType>jar</packageType>
+          <include>runnable</include>
         </configuration>
       </plugin>
     </plugins>
